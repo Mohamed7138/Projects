@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display-result"><h1>0</h1></div>
+      <table class="calculator--keys">
+        <tbody>
+          <tr>
+            <td><input type="button" value="+" class="operators global" data-action="plus" /></td>
+            <td><input type="button" value="-" class="operators global" data-action="minus" /></td>
+            <td><input type="button" value="x" class="operators global" data-action="times" /></td>
+            <td><input type="button" value="/" class="operators global" data-action="devide" /></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="7" class="numbers global" /></td>
+            <td><input type="button" value="8" class="numbers global" /></td>
+            <td><input type="button" value="9" class="numbers global" /></td>
+            <td rowspan="4">
+              <input type="button" value="=" class="numbers operators global equal" data-action="equal" />
+            </td>
+          </tr>
+          <tr>
+            <td><input type="button" value="4" class="numbers global" /></td>
+            <td><input type="button" value="5" class="numbers global" /></td>
+            <td><input type="button" value="6" class="numbers global" /></td>
+                     </td>
+          </tr>
+          <tr>
+            <td><input type="button" value="1" class="numbers global" /></td>
+            <td><input type="button" value="2" class="numbers global" /></td>
+            <td><input type="button" value="3" class="numbers global" /></td>
+                     </td>
+          </tr>
+          <tr>
+            <td><input type="button" value="0" class="numbers global" /></td>
+            <td><input type="button" value="." class="numbers global" data-action="decimal" /></td>
+            <td><input type="button" value="AC" class="numbers global del" data-action="ac" /></td>
+                     </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
